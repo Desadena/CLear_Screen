@@ -6,18 +6,30 @@ After you copy this file to a python path
 ↓
 # Example:
 #Import script
+
 import cls
 
 print("Hello world")
+
+
 e = str(input("> "))
+
 if e == 'clear':
-  cls.cls()
+
+cls.cls()
+
 # Other Example: 
+
 #Import script
+
 from cls import cls
 
 print("Hello world")
+
 e = str(input("> "))
+
 if e == 'clear':
+
   cls
+
 
