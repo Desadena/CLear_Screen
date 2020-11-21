@@ -16,7 +16,7 @@ e = str(input("> "))
 
 if e == 'clear':
 
-cls.cls()
+  cls.cls()
 
 # Other Example: 
 
