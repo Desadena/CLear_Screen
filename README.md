@@ -1,4 +1,4 @@
-# clear_screen
+# CLear_Screen(CLS)
 Clear Screen for all OS's
 You copy this file to the python path, so you can use it in any script you want, it is very simple and practical for when you need to clean your terminal screen!
 After you copy this file to a python path
