@@ -1,5 +1,5 @@
 '''
-Clear Screen for all OS's - by don-batista!
+Clear Screen for all OS's - by carmine-falcone!
 CLS!
 '''
 #Modules
