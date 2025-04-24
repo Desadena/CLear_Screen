@@ -1,27 +1,17 @@
-'''
-Clear Screen for all OS's - by carmine-falcone!
-CLS!
-'''
-#Modules
-from __future__ import print_function
-import sys
 import os
-import time
+import sys as system
 
-#Vars
-system = sys.platform
-python_version = sys.version[1]
-
-def cls():
-    if 'linux' in system:
-        os.system("clear && printf '\e[3J'")
-    elif 'windows' in system or 'Windows' in system:
-        os.system("cls")
+def clear():
+    if system.platform.startswith(('win32')):
+        cmd = "cls"
+    elif system.platform.startswith(('linux', 'cygwin', 'darwin', 'freebsd')):
+        cmd = "clear && printf '\e[3J'"
     else:
-        n = '\n'*250
-        print(n)
-
-if __name__ == '__main__':
-    print("Cleaning Screen!")
-    time.sleep(0.5)
-    cls()
+        print("Platform not recognised")
+        cmd = input("Clear screen command on your computer")
+        if cmd == Null or cmd == "":
+            print('\n'*250)
+    if cmd != Null:
+        cmd_cls_v = os.system(cmd)
+        del cmd_cls_v
+# With modifications of Desadena and code of Catafrancia123
